@@ -3,7 +3,7 @@ import { path } from "ramda";
 
 import Home from "../components/Home/Home";
 
-import { getProducts, deleteProduct } from "../store/actions";
+import { getProducts } from "../store/actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -14,7 +14,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getProducts: () => dispatch(getProducts()),
-    deleteProduct: (id) => dispatch(deleteProduct(id)),
   };
 };
 

@@ -10,8 +10,6 @@ import { appStore } from "./store/store";
 import Layout from "./components/Shared/Layout";
 import About from "./components/About/About";
 import Home from "./containers/Home";
-import ProductDetail from "./containers/ProductDetail";
-import AddProduct from "./containers/AddProduct";
 
 function App() {
   return (
@@ -25,12 +23,6 @@ function App() {
               </Route>
               <Route path="/about">
                 <About />
-              </Route>
-              <Route path="/product/:id">
-                <ProductDetail />
-              </Route>
-              <Route path="/add-product">
-                <AddProduct />
               </Route>
             </Switch>
           </Layout>
